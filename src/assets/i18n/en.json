@@ -1,0 +1,9 @@
+{
+    "contactForm": {
+        "title": "Contanct me",
+        "phone": "Phone number",
+        "emailAddress": "Email Address",
+        "message": "Message",
+        "send": "Send"
+    }
+}

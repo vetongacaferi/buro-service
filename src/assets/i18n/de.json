@@ -1,0 +1,9 @@
+{
+    "contactForm": {
+        "title": "Kontakt ihren sie mich",
+        "phone": "HandyNumber",
+        "emailAddress": "Email addressa",
+        "message": "Nachricht",
+        "send": "Senden"
+    }
+}

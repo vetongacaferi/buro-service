@@ -1,0 +1,9 @@
+{
+    "contactForm": {
+        "title": "Me Kontakto",
+        "phone": "Nr i telefonit",
+        "emailAddress": "Email addressa",
+        "message": "Mesazhi",
+        "send": "Dergo"
+    }
+}
