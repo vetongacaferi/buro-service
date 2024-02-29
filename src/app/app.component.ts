@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { faFileInvoice, faWallet, faListCheck, faPassport, faChildren } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -31,31 +32,31 @@ export class AppComponent implements OnInit{
     {
       id: 'rrogatId',
       name: 'Rrogat',
-      icon: 'icon',
+      icon: faWallet,
       content: "Gjithqka rreth rrogav blah blah"
     },
     {
       id: 'tatimetId',
       name: 'Tatimet',
-      icon: 'icon',
+      icon: faFileInvoice,
       content: "Gjithqka rreth tatimev blah blah"
     },
     {
       id: 'menaxhimiOrganizativId',
       name: 'Menaxhimi Organizativ',
-      icon: 'icon',
+      icon: faListCheck,
       content: "Menaxhimi Organizativ blah blah"
     },
     {
       id: 'ndihmePerVizaId',
       name: 'Ndihme per Viza',
-      icon: 'icon',
+      icon: faPassport,
       content: "Ndihme per Viza blah blah"
     },
     {
       id: 'organizimTeFemijveId',
       name: 'Ndihme per organizim te femijve',
-      icon: 'icon',
+      icon: faChildren,
       content: "Ndihme per organizim te femijve"
     }
   ]
