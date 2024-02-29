@@ -22,6 +22,34 @@ export class AppComponent {
     }
   ];
 
+  contentCategories: any[] = [
+    {
+      id: 'rrogatId',
+      name: 'Rrogat',
+      icon: 'icon'
+    },
+    {
+      id: 'tatimetId',
+      name: 'Tatimet',
+      icon: 'icon'
+    },
+    {
+      id: 'menaxhimiOrganizativId',
+      name: 'Menaxhimi Organizativ',
+      icon: 'icon'
+    },
+    {
+      id: 'ndihmePerVizaId',
+      name: 'Ndihme per Viza',
+      icon: 'icon'
+    },
+    {
+      id: 'organizimTeFemijveId',
+      name: 'Ndihme per organizim te femijve',
+      icon: 'icon'
+    }
+  ]
+
   constructor(public translateService: TranslateService) {
     const defaultLang = this.translateService.defaultLang;
     

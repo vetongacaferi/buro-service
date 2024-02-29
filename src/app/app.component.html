@@ -31,9 +31,13 @@
 
   <section id="home" style="background-color: azure;padding:14px">
     <h1 style="text-align: center;">Content</h1>
-    <div style="">
-      <p>We can change this text to whatever we want</p>
+    <div style="display:flex;">
+      <div *ngFor="let category of contentCategories" style="border: 1px solid black; margin: 5px; padding: 10px; width: 300px">
+        <p>{{category.icon}}</p>
+        <p>{{category.name}}</p>
+      </div>
     </div>
+
   </section>
   <section id="about" style="background-color: green;color:white; padding: 30px">
     <h1 style="text-align: center;">About</h1>
@@ -47,29 +51,7 @@
   </section>
 
   <section id="contact">
-    <div style="background-color: blanchedalmond;padding:14px;">
-      <h1 style="text-align: center;">{{ 'contactForm.title' | translate}}</h1>
-      <form>
-        <div class="mb-3">
-          <label for="fullNameInput" class="form-label">{{ 'contactForm.title' | translate}}</label>
-          <input type="text" class="form-control" id="fullNameInput">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail" class="form-label">{{ 'contactForm.emailAddress' | translate}}</label>
-          <input type="email" class="form-control" id="exampleInputEmail">
-        </div>
-        <div class="mb-3">
-          <label for="phoneNumberInput" class="form-label">{{ 'contactForm.phone' | translate}}</label>
-          <input type="number" class="form-control" id="phoneNumberInput">
-        </div>
-        <div class="mb-3">
-          <label for="messageInput" class="form-label">{{ 'contactForm.message' | translate}}</label>
-          <textarea class="form-control" id="messageInput" rows="3"></textarea>
-        </div>
-        <button type="button" class="btn btn-success">{{ 'contactForm.send' | translate}}</button>
-      </form>
-    </div>
-
+    <app-contact-form></app-contact-form>
   </section>
 </div>
 
