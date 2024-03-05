@@ -13,8 +13,9 @@ export class AppComponent implements OnInit, AfterViewInit{
   
   myModal: any = null;
 
+  // modal data
+  modalTitle: string = '';
   modalContent: string = '';
-
 
   languageList: any[] = [
     {
@@ -33,32 +34,37 @@ export class AppComponent implements OnInit, AfterViewInit{
       id: 'rrogatId',
       name: 'Rrogat',
       icon: faWallet,
-      content: "Gjithqka rreth rrogav blah blah"
+      titleKey: "salariesTitle",
+      contentKey: "salariesContent"
     },
     {
       id: 'tatimetId',
       name: 'Tatimet',
       icon: faFileInvoice,
-      content: "Gjithqka rreth tatimev blah blah"
+      titleKey: "taxesTitle",
+      contentKey: "taxesContent"
     },
     {
       id: 'menaxhimiOrganizativId',
       name: 'Menaxhimi Organizativ',
       icon: faListCheck,
-      content: "Menaxhimi Organizativ blah blah"
+      titleKey: "digitalAccountingTitle",
+      contentKey: "digitalAccountingContent"
     },
     {
       id: 'ndihmePerVizaId',
       name: 'Ndihme per Viza',
       icon: faPassport,
-      content: "Ndihme per Viza blah blah"
+      titleKey: "appointmentTitle",
+      contentKey: "appointmentContent"
     },
-    {
-      id: 'organizimTeFemijveId',
-      name: 'Ndihme per organizim te femijve',
-      icon: faChildren,
-      content: "Ndihme per organizim te femijve"
-    }
+    // {
+    //   id: 'organizimTeFemijveId',
+    //   name: 'Ndihme per organizim te femijve',
+    //   icon: faChildren,
+    //   titleKey: "",
+    //   contentKey: ""
+    // }
   ]
 
   constructor(public translateService: TranslateService) {
@@ -116,8 +122,9 @@ export class AppComponent implements OnInit, AfterViewInit{
   }
 
   public openModal(id: string): void{
-    const content = this.contentCategories.find(x => x.id === id)?.content;
-    this.modalContent = content;
+    const selectedKategory = this.contentCategories.find(x => x.id === id);
+    this.modalTitle = 'Content.'+selectedKategory.titleKey;
+    this.modalContent = 'Content.'+selectedKategory.contentKey;
     this.myModal.show();
 
     //a.toglle();

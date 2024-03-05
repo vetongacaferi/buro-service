@@ -17,6 +17,6 @@
         <label for="messageInput" class="form-label">{{ 'contactForm.message' | translate}}</label>
         <textarea class="form-control" id="messageInput" rows="3"></textarea>
       </div>
-      <button type="button" class="btn btn-success">{{ 'contactForm.send' | translate}}</button>
+      <button (click)="onFormSubmit()" type="button" class="btn btn-success">{{ 'contactForm.send' | translate}}</button>
     </form>
   </div>
