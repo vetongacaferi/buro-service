@@ -11,6 +11,7 @@
     },
     "contactForm": {
         "title": "Contanct me",
+        "name": "Name",
         "phone": "Phone number",
         "emailAddress": "Email Address",
         "message": "Message",

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { EmailService } from '../email.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { IContactData } from '../models/contact-form';
 
 @Component({
   selector: 'app-contact-form',
@@ -8,14 +10,31 @@ import { EmailService } from '../email.service';
 })
 export class ContactFormComponent {
 
-  constructor(private emailService: EmailService) {
+  contactForm: FormGroup;
+
+  constructor(private fb: FormBuilder, private emailService: EmailService) {
+    this.contactForm = this.fb.group({
+      name: ['', Validators.required],
+      emailAddress: ['', Validators.required],
+      phoneNumber: ['', Validators.required],
+      message: ['', Validators.required]
+    });
   }
 
-  public onFormSubmit(): void{
-    console.log('onFormSubmit');
-    this.emailService.sendMessage({'message': 'empty'}).subscribe( result => {
+  public onSubmit(): void{
+    console.log('onSubmit clicked');
+
+    if(!this.contactForm.valid){
+      return;
+    }
+
+    const contactData: IContactData = this.contactForm.getRawValue();
+    console.log('contactForm:', contactData);
+
+    // TODO: handle better service to send message
+    this.emailService.sendMessage(contactData).subscribe( result => {
       console.log('result:', result);
-    });    
+    });
 
   }
 }

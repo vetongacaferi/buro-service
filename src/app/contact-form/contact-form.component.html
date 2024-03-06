@@ -1,22 +1,22 @@
 <div style="background-color: blanchedalmond;padding:14px;">
     <h1 style="text-align: center;">{{ 'contactForm.title' | translate}}</h1>
-    <form>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="mb-3">
-        <label for="fullNameInput" class="form-label">{{ 'contactForm.title' | translate}}</label>
-        <input type="text" class="form-control" id="fullNameInput">
+        <label for="full-name" class="form-label">{{ 'contactForm.name' | translate}}</label>
+        <input type="text" class="form-control" id="full-name" formControlName="name">
       </div>
       <div class="mb-3">
-        <label for="exampleInputEmail" class="form-label">{{ 'contactForm.emailAddress' | translate}}</label>
-        <input type="email" class="form-control" id="exampleInputEmail">
+        <label for="email-address" class="form-label">{{ 'contactForm.emailAddress' | translate}}</label>
+        <input type="email" class="form-control" id="email-address" formControlName="emailAddress">
       </div>
       <div class="mb-3">
-        <label for="phoneNumberInput" class="form-label">{{ 'contactForm.phone' | translate}}</label>
-        <input type="number" class="form-control" id="phoneNumberInput">
+        <label for="phone-number" class="form-label">{{ 'contactForm.phone' | translate}}</label>
+        <input type="text" class="form-control" id="phone-number" formControlName="phoneNumber">
       </div>
       <div class="mb-3">
-        <label for="messageInput" class="form-label">{{ 'contactForm.message' | translate}}</label>
-        <textarea class="form-control" id="messageInput" rows="3"></textarea>
+        <label for="message" class="form-label">{{ 'contactForm.message' | translate}}</label>
+        <textarea class="form-control" id="message" rows="3" formControlName="message"></textarea>
       </div>
-      <button (click)="onFormSubmit()" type="button" class="btn btn-success">{{ 'contactForm.send' | translate}}</button>
+      <button type="submit" class="btn btn-success">{{ 'contactForm.send' | translate}}</button>
     </form>
   </div>

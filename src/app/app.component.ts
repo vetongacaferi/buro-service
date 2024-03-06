@@ -57,14 +57,7 @@ export class AppComponent implements OnInit, AfterViewInit{
       icon: faPassport,
       titleKey: "appointmentTitle",
       contentKey: "appointmentContent"
-    },
-    // {
-    //   id: 'organizimTeFemijveId',
-    //   name: 'Ndihme per organizim te femijve',
-    //   icon: faChildren,
-    //   titleKey: "",
-    //   contentKey: ""
-    // }
+    }
   ]
 
   constructor(public translateService: TranslateService) {
@@ -77,7 +70,6 @@ export class AppComponent implements OnInit, AfterViewInit{
     }
   }
   ngAfterViewInit(): void {
-    console.log('ngAfterViewInit:')
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('header nav a');
 
