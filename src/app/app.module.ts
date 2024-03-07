@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MarkdownModule } from 'ngx-markdown';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,6 +26,7 @@ export function HttpLoaderFactory(http: HttpClient){
     ReactiveFormsModule,
     HttpClientModule,
     FontAwesomeModule,
+    MarkdownModule.forRoot(),
     TranslateModule.forRoot({
       defaultLanguage: "en",
       loader: {

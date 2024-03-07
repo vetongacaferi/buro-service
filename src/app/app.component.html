@@ -81,7 +81,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <b>Die Lohnbuchhaltung</b><br><br>{{modalContent | translate}}
+        <markdown [data]="modalContent | translate"></markdown>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
