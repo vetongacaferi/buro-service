@@ -1,11 +1,14 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IContactData } from './models/contact-form';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmailService {
+
+  baseUrl = environment.isProduction ? 'https://buroserviceserver.azurewebsites.net/': 'localhost:3000';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -16,6 +19,6 @@ export class EmailService {
       })
     };
     // TODO: figure out this part, when we get angular and node js server on production
-    return this.httpClient.post("http://localhost:3000/email", contactData, headers);
+    return this.httpClient.post(`${this.baseUrl}/email`, contactData, headers);
   }
 }
