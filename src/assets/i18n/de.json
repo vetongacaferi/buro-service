@@ -1,5 +1,11 @@
 {
-    "Content": {
+	"header": {
+		"applicationTitle": "BüroService",
+		"homePage":"Home",
+		"aboutPage": "About",
+		"contactPage": "Contact"
+	},
+    "content": {
         "salariesTitle": "Lohnbuchhaltung",
         "salariesContent":"Die Lohnbuchhaltung ist ein wichtiger Teil der Finanzverwaltung eines Unternehmens. Gerne betreuen wir für Sie die Berechnung und Verwaltung der Gehälter und Löhne Ihrer Mitarbeiter.  ",
         "taxesTitle": "Buchhaltung",
@@ -9,11 +15,30 @@
         "appointmentTitle": "Hilfe bei Einwanderung aus dem Kosovo nach Deutschland",
         "appointmentContent": "Die Einwanderungsanmeldung in Deutschland ist ein wichtiger Schritt für Menschen, die in das Land ziehen möchten. Wenn Sie nach Deutschland einwandern, müssen Sie sich bei der zuständigen Ausländerbehörde oder dem Bürgeramt anmelden. Wir helfen Ihnen die jeweiligen Dokumente aufzubereiten und an die jeweiligen Behörden weiterzuleiten."
     },
+	"aboutSection": {
+		"leftContent": "blah blah blah ",
+		"rightContent": "right right right"
+	},
     "contactForm": {
         "title": "Kontakt ihren sie mich",
         "phone": "HandyNumber",
         "emailAddress": "Email addressa",
         "message": "Nachricht",
-        "send": "Senden"
-    }
+        "send": "Senden",
+		"sending": "Sending",
+		"successMessage": "Faleminderit qe me keni kontaktuar blah blah",
+		"failedMessage": "Leider ist etwas schiefgelaufen. Bitte versuchen Sie er später erneut.",
+		"nameRequiredMessage": "Bitte tragen Sie Ihren Namen ein",
+		"emailAddresRequiredMessage": "Bitte tragen Sie Ihre E-Mail Adresse ein",
+		"emailAddresInValidMessage": "Die E-Mail Adresse ist nicht korrekt",
+		"phoneNumberRequired": "Bitte tragen Sie Ihre Rufnummer",
+		"phoneNumberInValidMessage": "Die Rufnummer ist nicht korrekt",
+		"messageRequired": "Bitte tragen sie Ihren Message ein"		
+	},
+	"location": {
+		"locationTitle": "Location",
+		"streetAddress": "Badstr. 2 ",
+		"cityAddress":"76275 Ettlingen"
+	},
+	"aroundTheWeb": "Around the web"
 }

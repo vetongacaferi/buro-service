@@ -1,13 +1,22 @@
 <div style="background-color: blanchedalmond;padding:14px;">
     <h1 style="text-align: center;">{{ 'contactForm.title' | translate}}</h1>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <div class="mb-3">
+      <div class="form-group">
         <label for="full-name" class="form-label">{{ 'contactForm.name' | translate}}</label>
         <input type="text" class="form-control" id="full-name" formControlName="name">
+        <span class="text-danger" *ngIf="(contactFromControl['name']?.touched || submitted) && contactFromControl['name']?.errors?.['required']">
+          {{'contactForm.nameRequiredMessage' | translate}}
+        </span>
       </div>
       <div class="mb-3">
         <label for="email-address" class="form-label">{{ 'contactForm.emailAddress' | translate}}</label>
         <input type="email" class="form-control" id="email-address" formControlName="emailAddress">
+        <span class="text-danger" *ngIf="(contactFromControl['emailAddress']?.touched || submitted) && contactFromControl['emailAddress']?.errors?.['required']">
+          {{'contactForm.emailAddresRequiredMessage' | translate}}
+        </span>
+        <span class="text-danger" *ngIf="(contactFromControl['emailAddress']?.touched || submitted) && contactFromControl['emailAddress']?.errors?.['email']">
+          {{'contactForm.emailAddresInValidMessage' | translate}}
+        </span>
       </div>
       <div class="mb-3">
         <label for="phone-number" class="form-label">{{ 'contactForm.phone' | translate}}</label>
@@ -17,6 +26,7 @@
         <label for="message" class="form-label">{{ 'contactForm.message' | translate}}</label>
         <textarea class="form-control" id="message" rows="3" formControlName="message"></textarea>
       </div>
-      <button type="submit" class="btn btn-success">{{ 'contactForm.send' | translate}}</button>
+      <button type="button" class="btn" (click)="resetFrom()">Reset</button>
+      <button type="submit" role="status" class="btn btn-success" [disabled]="sendingMessage"><span [ngClass]="{'spinner-border spinner-border-sm': sendingMessage}"></span>{{ (sendingMessage ? 'contactForm.sending' :'contactForm.send') | translate}}</button>
     </form>
   </div>

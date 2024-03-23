@@ -8,8 +8,6 @@ import { environment } from '../environments/environment';
 })
 export class EmailService {
 
-  baseUrl = environment.isProduction ? 'https://buroserviceserver.azurewebsites.net/': 'localhost:3000';
-
   constructor(private httpClient: HttpClient) { }
 
   public sendMessage(contactData: IContactData){
@@ -19,6 +17,6 @@ export class EmailService {
       })
     };
     // TODO: figure out this part, when we get angular and node js server on production
-    return this.httpClient.post(`${this.baseUrl}/email`, contactData, headers);
+    return this.httpClient.post(`${environment.ApiUrl}/email`, contactData, headers);
   }
 }
