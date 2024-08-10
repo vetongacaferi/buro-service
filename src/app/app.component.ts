@@ -34,29 +34,78 @@ export class AppComponent implements OnInit, AfterViewInit{
       id: 'rrogatId',
       name: 'Rrogat',
       icon: faWallet,
-      titleKey: "salariesTitle",
-      contentKey: "salariesContent"
+      titleKey: "content.invoiceTitle",
+      contentKey: "content.invoiceContent"
     },
     {
       id: 'tatimetId',
       name: 'Tatimet',
       icon: faFileInvoice,
-      titleKey: "taxesTitle",
-      contentKey: "taxesContent"
+      titleKey: "content.taxesTitle",
+      contentKey: "content.taxesContent"
     },
     {
       id: 'menaxhimiOrganizativId',
       name: 'Menaxhimi Organizativ',
       icon: faListCheck,
-      titleKey: "digitalAccountingTitle",
-      contentKey: "digitalAccountingContent"
+      titleKey: "content.digitalAccountingTitle",
+      contentKey: "content.digitalAccountingContent"
     },
     {
       id: 'ndihmePerVizaId',
       name: 'Ndihme per Viza',
       icon: faPassport,
-      titleKey: "appointmentTitle",
-      contentKey: "appointmentContent"
+      titleKey: "content.appointmentTitle",
+      contentKey: "content.appointmentContent"
+    },
+    {
+      id: 'taxId',
+      name: 'Pergatitje per taxa',
+      icon: faPassport, // TODO:
+      titleKey: "content.taxTitle",
+      contentKey: "content.taxContent"
+    },
+    {
+      id: 'salaryId',
+      name: 'Salary',
+      icon: faPassport, // TODO:
+      titleKey: "content.salaryTitle",
+      contentKey: "content.salaryContent"
+    },
+    {
+      id: 'organisationId',
+      name: 'Organisation',
+      icon: faPassport, // TODO:
+      titleKey: "content.organisationTitle",
+      contentKey: "content.organisationContent"
+    },
+    {
+      id: 'imigrationId',
+      name: 'Imigration',
+      icon: faPassport, // TODO:
+      titleKey: "content.immigrationTitle",
+      contentKey: "content.immigrationContent"
+    },
+    {
+      id: 'kidsId',
+      name: 'Kids',
+      icon: faPassport, // TODO:
+      titleKey: "content.kidsTitle",
+      contentKey: "content.kidsContent"
+    },
+    {
+      id: 'logoId',
+      name: 'Logo',
+      icon: faPassport, // TODO:
+      titleKey: "content.logoTitle",
+      contentKey: "content.logoContent"
+    },
+    {
+      id: 'startupId',
+      name: 'Startup',
+      icon: faPassport, // TODO:
+      titleKey: "content.startupTitle",
+      contentKey: "content.startupContent"
     }
   ]
 
@@ -115,14 +164,9 @@ export class AppComponent implements OnInit, AfterViewInit{
 
   public openModal(id: string): void{
     const selectedKategory = this.contentCategories.find(x => x.id === id);
-    this.modalTitle = 'Content.'+selectedKategory.titleKey;
-    this.modalContent = 'Content.'+selectedKategory.contentKey;
+    this.modalTitle = selectedKategory.titleKey;
+    this.modalContent = selectedKategory.contentKey;
     this.myModal.show();
-
-    //a.toglle();
-    //a.show();
-    //a.hide();
-    //a.dispose();
   }
 
 }

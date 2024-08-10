@@ -16,6 +16,7 @@ export class EmailService {
         'Content-Type': 'application/json'
       })
     };
+    console.log('sendMessage contactData:', contactData);
     // TODO: figure out this part, when we get angular and node js server on production
     return this.httpClient.post(`${environment.ApiUrl}/email`, contactData, headers);
   }

@@ -1,41 +1,63 @@
 {
 	"header": {
-		"applicationTitle": "BüroService",
-		"homePage":"Home",
-		"aboutPage": "About",
+		"applicationTitle": "Gacaferi BüroService",
+		"homePage":"Homepage",
+		"aboutPage": "About us",
 		"contactPage": "Contact"
 	},
-    "content": {
-        "salariesTitle": "Lohnbuchhaltung",
-        "salariesContent":"Die Lohnbuchhaltung ist ein wichtiger Teil der Finanzverwaltung eines Unternehmens. Gerne betreuen wir für Sie die Berechnung und Verwaltung der Gehälter und Löhne Ihrer Mitarbeiter.  ",
-        "taxesTitle": "Buchhaltung",
-        "taxesContent": "Die Buchhaltung ist ein wesentlicher Teil des Geschäftsprozesses. Sie umfasst die Aufzeichnung und Organisation von Finanztransaktionen, wie Einnahmen, Ausgaben, Zahlungen und Rechnungen. Gerne führen wir für Sie eine ordnungsgemäße Buchhaltung und helfen Ihrem Unternehmen, ihre Finanzen im Blick zu behalten, Steuern vorzubereiten und fundierte Geschäftsentscheidungen zu treffen.",
-        "digitalAccountingTitle": "Digitalisierung der Buchhaltung",
-        "digitalAccountingContent": "Die Digitalisierung von Belegen ist ein wichtiger Bestandteil der digitalen Buchhaltung. Anstatt physische Papierbelege zu verwenden, werden die Belege digital erfasst und gespeichert. Digitale Belege werden dann in der Buchhaltungssoftware abgelegt, wo sie leicht zugänglich und durchsuchbar sind. Das erleichtert die Verwaltung, Organisation und den Zugriff auf Belege, spart Platz und reduziert den Papierverbrauch. Die Digitalisierung von Belegen trägt somit zur Effizienz und Genauigkeit der Buchhaltung bei. Wir übernehmen für Sie die Digitalisierung und Aufbereitung der Buchhaltung für Ihr Unternehmen und senden es an Ihren Steuerberater. ",
-        "appointmentTitle": "Hilfe bei Einwanderung aus dem Kosovo nach Deutschland",
-        "appointmentContent": "Die Einwanderungsanmeldung in Deutschland ist ein wichtiger Schritt für Menschen, die in das Land ziehen möchten. Wenn Sie nach Deutschland einwandern, müssen Sie sich bei der zuständigen Ausländerbehörde oder dem Bürgeramt anmelden. Wir helfen Ihnen die jeweiligen Dokumente aufzubereiten und an die jeweiligen Behörden weiterzuleiten."
-    },
 	"aboutSection": {
-		"leftContent": "blah blah blah ",
-		"rightContent": "right right right"
+		"topContent": "Our services support your success and the development of your company. With our service, we relieve you of the burden so that you can concentrate on the core of your business.",
+		"leftContent": "The Gacaferi Büroservice offers tailor-made organizational services for entrepreneurs of all legal forms as well as private individuals. From accounting to payroll to business organization. ",
+		"rightContent": "With us you will find all the services you need under one roof. Let us help you keep an eye on your finances and optimize your business processes."
+	},
+	"content": {	
+        "invoiceTitle": "Sorting and digitizing documents",
+        "invoiceContent":"Digitizing documents is an excellent way to increase efficiency in accounting. This makes it possible to manage documents quickly and easily. We support you in optimizing your accounting processes. It is an important step towards efficient accounting.",
+        "taxesTitle": "Posting current business transactions",
+        "taxesContent": "We help you to organize your accounting optimally and to post all business transactions correctly. Rely on our expertise to manage your financial data professionally and keep track of your business activities.",
+        "digitalAccountingTitle": "Accounts receivable and accounts payable accounting",
+        "digitalAccountingContent": "Our team helps you to manage your outstanding receivables and accounts payable efficiently. With our expertise, we ensure that your accounting runs smoothly and that you always keep track of your finances.",
+        "appointmentTitle": "Preparation of business analyses",
+        "appointmentContent": "We create customized business analyses to give you a detailed overview of your company's financial situation. Our analyses help you to make well-founded business decisions and optimize your company's performance.",
+		"taxTitle":"Preparation of advance VAT returns and annual financial statements", 
+		"taxContent":"Our experienced team supports you in meeting your tax obligations. Rely on our expertise to organize your accounting optimally and successfully manage tax requirements. We take care of the preparation of the VAT returns. Our team ensures that all information and documents are carefully prepared to ensure a smooth process. Trust us to make the collaboration with your tax advisor efficient and professional.", 
+		"salaryTitle":"Payroll accounting", 
+		"salaryContent":"With our expertise, we ensure that all payroll-related aspects of your company are properly managed. We take care of: • Registration and preparation of employee certificates • Preparation of payroll and transfer slips for pay transfers • Accounting of short-term or marginal employees • Reporting to health insurance companies, pension insurance and tax office", 
+		"organisationTitle":"Organization", 
+		"organisationContent":"We specialize in helping you organize your company and optimize business processes. With our expertise, we help you work more efficiently and make your company successful. Let's work together to optimize your processes and take your company to the next level.", 
+		"immigrationTitle":"Help with immigration from Kosovo to Germany", 
+		"immigrationContent":"Immigration registration in Germany is an important step for people who want to move to the country. Our team will assist you in every step of the immigration process, from visa application to integration in Germany. Trust in our experience and expertise to make your move as smooth as possible. We will accompany you on your way to a new chapter of your life here in Germany.", 
+		"kidsTitle":"Child benefit, child benefit supplement, school registration, etc.", 
+		"kidsContent":"We offer professional support with child benefit, child benefit supplement, parental allowance and other registrations, such as school matters. Trust us to take the bureaucratic burden off your shoulders and to provide you with the best possible support with all matters relating to your children.", 
+		"logoTitle":"Creating logos for companies and business cards", 
+		"logoContent":"Would you like to present your company with a unique and professional logo and business cards? We offer tailor-made solutions for the design. A logo that reflects your company's identity and business cards that leave a lasting impression.", 
+		"startupTitle":"Start-up grant and profitability analyses", 
+		"startupContent":"Creating start-up grants and profitability analyses requires a deep understanding of the financial world and a precise analysis of business transactions. With our expertise, we are qualified to carry out important calculations and evaluations."
+    },
+	"jobDescription": {
+		"title": "Addition",
+		"content": "We are not an alternative to tax advisors. The Tax Advisors Act (StBerG) regulates precisely which tasks can be carried out by which professional group. We do not see ourselves as a replacement for your tax advisor, but as a partner who prepares the relevant areas for optimal further processing. We work closely with your tax advisor to ensure that your tax matters are handled professionally and efficiently."
 	},
     "contactForm": {
-        "title": "Kontakt ihren sie mich",
-        "phone": "HandyNumber",
-        "emailAddress": "Email addressa",
-        "message": "Nachricht",
-        "send": "Senden",
-		"successMessage": "Faleminderit qe me keni kontaktuar blah blah",
-		"failedMessage": "Leider ist etwas schiefgelaufen. Bitte versuchen Sie er später erneut.",
-		"nameRequiredMessage": "Bitte tragen Sie Ihren Namen ein",
-		"emailAddresRequiredMessage": "Bitte tragen Sie Ihre E-Mail Adresse ein",
-		"emailAddresInValidMessage": "Die E-Mail Adresse ist nicht korrekt",
-		"phoneNumberRequired": "Bitte tragen Sie Ihre Rufnummer",
-		"phoneNumberInValidMessage": "Die Rufnummer ist nicht korrekt",
-		"messageRequired": "Bitte tragen sie Ihren Message ein"		
+		"topContentContact": "Are you interested and would like to contact us or do you have questions? You are welcome to contact us using the contact form. Please note that we currently have a waiting time of 7 days for processing inquiries. We want to treat each inquiry carefully and individually. We ask for your understanding for this short delay. Your patience is greatly appreciated and we look forward to contacting you soon.",
+        "title": "Kontaktieren Sie mich",
+		"name": "Name",
+        "phone": "Tel.No.",
+        "emailAddress": "Email",
+        "message": "Message",
+        "send": "Send",
+		"sending": "Sending",
+		"successMessage": "Thank you for contacting us. Please note that we currently have a 7 day wait time for processing requests. We aim to treat each request carefully and individually. We ask for your understanding for this short delay. Your patience is greatly appreciated and we look forward to hearing from you soon.",
+		"failedMessage": "Unfortunately something went wrong. Please try again later.",
+		"nameRequiredMessage": "Please enter your name",
+		"emailAddresRequiredMessage": "Please enter your email address",
+		"emailAddresInValidMessage": "The email address is incorrect",
+		"phoneNumberRequired": "Please enter your phone number",
+		"phoneNumberInValidMessage": "The phone number is not complete",
+		"messageRequired": "Please enter your message"		
 	},
 	"location": {
-		"locationTitle": "Location",
+		"locationTitle": "Büroanschricht",
 		"streetAddress": "Badstr. 2 ",
 		"cityAddress":"76275 Ettlingen"
 	},

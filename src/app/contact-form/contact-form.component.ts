@@ -15,8 +15,10 @@ export class ContactFormComponent implements OnInit {
 
   submitted: boolean = false;
 
-  sendingMessage = false;
+  isSending = false;
 
+  errorMessage: string = 'Something went wrong, please try again later!';
+  
   constructor(private fb: FormBuilder, private emailService: EmailService) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
@@ -38,7 +40,7 @@ export class ContactFormComponent implements OnInit {
       return;
     }
 
-    this.sendingMessage = true;
+    this.isSending = true;
     const contactData: IContactData = this.contactForm.getRawValue();
     console.log('contactForm:', contactData);
 
@@ -50,8 +52,15 @@ export class ContactFormComponent implements OnInit {
         }
         this.resetFrom();
       },
-      error: (error) => console.error(error),
-      complete: () => this.sendingMessage = false
+      error: (error) => {
+        console.error(error);
+        console.log('error:', error);
+        this.isSending = false;
+      },
+      complete: () => {
+        this.isSending = false;
+        console.log('complete:');
+      }
   });
 
   }

@@ -1,42 +1,63 @@
 {
 	"header": {
-		"applicationTitle": "BüroService",
-		"homePage":"Home",
-		"aboutPage": "About",
-		"contactPage": "Contact"
+		"applicationTitle": "Gacaferi BüroService",
+		"homePage":"Homepage",
+		"aboutPage": "Über uns",
+		"contactPage": "Kontakt"
 	},
-    "content": {
-        "salariesTitle": "Lohnbuchhaltung",
-        "salariesContent":"Die Lohnbuchhaltung ist ein wichtiger Teil der Finanzverwaltung eines Unternehmens. Gerne betreuen wir für Sie die Berechnung und Verwaltung der Gehälter und Löhne Ihrer Mitarbeiter.  ",
-        "taxesTitle": "Buchhaltung",
-        "taxesContent": "Die Buchhaltung ist ein wesentlicher Teil des Geschäftsprozesses. Sie umfasst die Aufzeichnung und Organisation von Finanztransaktionen, wie Einnahmen, Ausgaben, Zahlungen und Rechnungen. Gerne führen wir für Sie eine ordnungsgemäße Buchhaltung und helfen Ihrem Unternehmen, ihre Finanzen im Blick zu behalten, Steuern vorzubereiten und fundierte Geschäftsentscheidungen zu treffen.",
-        "digitalAccountingTitle": "Digitalisierung der Buchhaltung",
-        "digitalAccountingContent": "Die Digitalisierung von Belegen ist ein wichtiger Bestandteil der digitalen Buchhaltung. Anstatt physische Papierbelege zu verwenden, werden die Belege digital erfasst und gespeichert. Digitale Belege werden dann in der Buchhaltungssoftware abgelegt, wo sie leicht zugänglich und durchsuchbar sind. Das erleichtert die Verwaltung, Organisation und den Zugriff auf Belege, spart Platz und reduziert den Papierverbrauch. Die Digitalisierung von Belegen trägt somit zur Effizienz und Genauigkeit der Buchhaltung bei. Wir übernehmen für Sie die Digitalisierung und Aufbereitung der Buchhaltung für Ihr Unternehmen und senden es an Ihren Steuerberater. ",
-        "appointmentTitle": "Hilfe bei Einwanderung aus dem Kosovo nach Deutschland",
-        "appointmentContent": "Die Einwanderungsanmeldung in Deutschland ist ein wichtiger Schritt für Menschen, die in das Land ziehen möchten. Wenn Sie nach Deutschland einwandern, müssen Sie sich bei der zuständigen Ausländerbehörde oder dem Bürgeramt anmelden. Wir helfen Ihnen die jeweiligen Dokumente aufzubereiten und an die jeweiligen Behörden weiterzuleiten."
+	"content": {	
+        "invoiceTitle": "Sortierung und Digitalisierung von Belegen",
+        "invoiceContent":"Die Digitalisierung von Belegen ist eine hervorragende Möglichkeit, um die Effizienz in der Buchhaltung zu steigern. So wird ermöglicht, dass die Unterlagen schnell und einfach zu verwalten sind. Wir unterstützen Sie dabei, Ihre Buchhaltungsprozesse zu optimieren. Es ein wichtiger Schritt in Richtung einer effizienten Buchführung. ",
+        "taxesTitle": "Buchung laufender Geschäftsvorfälle",
+        "taxesContent": "Wir unterstützen Sie dabei, Ihre Buchhaltung optimal zu organisieren und alle geschäftlichen Transaktionen korrekt zu verbuchen. Verlassen Sie sich auf unsere Fachkenntnisse, um Ihre Finanzendaten professionell zu verwalten und den Überblick über Ihre geschäftlichen Aktivitäten zu behalten.  ",
+        "digitalAccountingTitle": "Debitoren und Kreditorenbuchhaltung",
+        "digitalAccountingContent": "Unser Team hilft Ihnen dabei, Ihre offenen Forderungen und Verbindlichkeiten effizient zu verwalten. Mit unserer Expertise sorgen wir dafür, dass Ihre Buchhaltung reibungslos läuft und Sie stets den Überblick über Ihre Finanzen behalten. ",
+        "appointmentTitle": "Erstellung betriebswirtschaftlicher Auswertungen",
+        "appointmentContent": "Wie erstellen maßgeschneiderte betriebswirtschaftliche Auswertungen, um Ihnen einen detaillierten Überblick über die finanzielle Situation Ihres Unternehmens zu bieten. Unsere Auswertungen helfen Ihnen, fundierte Geschäftsentscheidungen zu treffen und Ihre Unternehmensperformance zu optimieren2. ",
+		"taxTitle":"Vorbereitung von Umsatzsteuervoranmeldung (UStVA) und Jahresabschlüsse", 
+		"taxContent":"Unser erfahrenes Team unterstützt Sie dabei, Ihre steuerlichen Verpflichtungen zu erfüllen. Verlassen Sie sich auf unsere Fachkenntnisse, um Ihre Buchhaltung optimal zu organisieren und steuerliche Anforderungen erfolgreich zu bewältigen. Wir übernehmen die Vorbereitung der UStVA. Unser Team stellt sicher, dass alle Informationen und Unterlagen sorgfältig vorbereitet sind, um einen reibungslosen Prozess zu gewährleisten. Vertrauen Sie und, um die Zusammenarbeit mit Ihrem Steuerberater effizient und professionell zu gestalten.", 
+		"salaryTitle":"Lohnbuchhaltung", 
+		"salaryContent":"Mit unserer Expertise sorgen wir daf\u00FCr, dass alle lohnbezogenen Aspekte Ihres Unternehmens ordnungsgem\u00E4\u00DF verwaltet werden. Wir k\u00FCmmern uns um: \tAnmeldung und Erstellung von Bescheinigungen der Mitarbeiter\tErstellung der Lohn- und Gehaltsabrechnung sowie des \u00DCberweisungstr\u00E4gers f\u00FCr die Lohn\u00FCberweisungen\u2022\tAbrechnung von kurzfristig oder geringf\u00FCgig Besch\u00E4ftigten Meldungen an Krankenkassen, Rentenversicherung und Finanzamt", 
+		"organisationTitle":"Organisation ", 
+		"organisationContent":"Wir sind spezialisiert auf die Unterstützung bei der Organisation Ihres Unternehmens und Optimierung der Geschäftsprozesse. Mit unserer Expertise helfen wir Ihnen, effizienter zu arbeiten und Ihr Unternehmen erfolgreich zu gestalten. Lassen Sie uns gemeinsam daran arbeiten, Ihre Abläufe zu optimieren und Ihr Unternehmen auf die nächste Stufe zu bringen. ", 
+		"immigrationTitle":"Hilfe bei Einwanderung aus dem Kosovo nach Deutschland ", 
+		"immigrationContent":"Die Einwanderungsanmeldung in Deutschland ist ein wichtiger Schritt für Menschen, die in das Land ziehen möchten. Unser Team steht Ihnen bei allen Schritten des Einwanderungsprozesses zur Seite, von Visumbeantragung bis zur Integration in Deutschland. Vertrauen Sie auf unsere Erfahrung und Expertise, um Ihren Umzug so reibungslos wie möglich zu gestalten. Wir begleiten Sie auf Ihrem Weg in ein neues Kapitel Ihres Lebens hier in Deutschland.  ", 
+		"kidsTitle":"Kindergeld, Kindergeldzuschlag, Schulanmeldung usw. ", 
+		"kidsContent":"Wir bieten professionelle Unterstützung beim Kindergeld, Kindergeldzuschlag, Elterngeld und anderen Anmeldungen, wie beispielsweise Schulangelegenheiten. Vertrauen Sie uns, um Ihnen den bürokratischen Aufwand abzunehmen und Sie bei allen Anliegen rund um Ihre Kinder optimal zu unterstützen.  ", 
+		"logoTitle":"Erstellen von Logos für Firmen und Visitenkarten ", 
+		"logoContent":"Möchten Sie Ihr Unternehmen mit einem einzigartigen und professionellen Logo sowie Visitenkarten präsentieren? Wir bieten hierbei maßgeschneiderte Lösungen für die Gestaltung. Ein Logo, das die Identität Ihrer Firma widerspiegelt, und Visitenkarten, die einen bleibenden Eindruck hinterlassen.  ", 
+		"startupTitle":"Gründungszuschuss ", 
+		"startupContent":"Die Erstellung von Gründungszuschüssen und Rentabilitätsanalysen erfordert ein tiefes Verständnis der Finanzwelt und eine genaue Analyse von Geschäftsvorgängen. Mit unserem Fachwissen sind wir geeignet, um wichtige Berechnungen und Bewertungen durchzuführen. "
     },
-	"aboutSection": {
-		"leftContent": "blah blah blah ",
-		"rightContent": "right right right"
+	"jobDescription": {
+		"title": "Zusatz",
+		"content": "Wir sind keine Alternative für den Steuerberater. Das Steuerberatergesetz (StBerG) regelt präzise, welche Aufgaben von welcher Berufsgruppe übernommen werden dürfen.  Wir verstehen uns nicht als Ersatz für Ihren Steuerberater, sondern als Partner, der die relevanten Bereiche für eine optimale Weiterbearbeitung vorbereitet. Wir arbeiten eng mit Ihrem Steuerberater zusammen, um sicherzustellen, dass Ihre steuerlichen Angelegenheiten professionell und effizient betreut werden."
 	},
+	"aboutSection": {
+		"topContent": "Unsere Leistungen unterstützen Ihren Erfolg und die Entwicklung Ihres Unternehmens. Mit unserem Service entlasten wir Sie damit Sie sich auf den Kern Ihres Unternehmens konzentrieren können. ",
+		"leftContent": "Das Gacaferi Büroservice bietet maßgeschneiderte organisatorische Dienstleistungen für Unternehmer jeglicher Rechtsform sowie Privatpersonen an. Von Buchhaltung über Lohnabrechnung bis hin zur Geschäftsorganisation. ",
+		"rightContent": "Bei uns finden Sie alle benötigten Dienstleistungen unter einem Dach. Lassen Sie uns Ihnen helfen Ihre Finanzen im Blick zu behalten und Ihre Geschäftsprozesse zu optimieren. "
+	}, 
     "contactForm": {
+		"topContentContact": "Sie haben Interesse und möchten mit uns Kontakt aufnehmen oder haben Fragen? Gerne können Sie uns über das Kontaktformular bei uns melden. Bitte beachten Sie, dass wir zuzeit eine Wartezeit von 7 Tagen für die Bearbeitung von Anfragen haben. Wir möchten jede Anfrage sorgfältig und individuell behandeln. Wir bitte um Ihr Verständnis für diese kurze Verzögerung. Ihre Geduld wird sehr geschätzt, und wir freuen uns darauf, bald mit Ihnen Kontakt aufzunehmen. ",
         "title": "Kontakt ihren sie mich",
-        "phone": "HandyNumber",
-        "emailAddress": "Email addressa",
+		"name": "Name",
+		"phone": "Telefonnummer",
+        "emailAddress": "Email",
         "message": "Nachricht",
         "send": "Senden",
-		"sending": "Sending",
-		"successMessage": "Faleminderit qe me keni kontaktuar blah blah",
-		"failedMessage": "Leider ist etwas schiefgelaufen. Bitte versuchen Sie er später erneut.",
+		"sending": "Sendenn",
+		"successMessage": "Vielen Dank für Ihre Kontaktafnahme. Bitte beachten Sie, dass wir zuzeit eine Wartezeit von 7 Tagen für die Bearbeitung von Anfragen haben. Wir möchten jede Anfrage sorgfältig und individuell behandeln. Wir bitte um Ihr Verständnis für diese kurze Verzögerung. Ihre Geduld wird sehr geschätzt, und wir freuen uns darauf, bald mit Ihnen Kontakt aufzunehmen. ",
+		"failedMessage": "Leider ist etwas schiefgelaufen. Bitte versuchen Sie es später erneut.",
 		"nameRequiredMessage": "Bitte tragen Sie Ihren Namen ein",
-		"emailAddresRequiredMessage": "Bitte tragen Sie Ihre E-Mail Adresse ein",
+		"emailAddresRequiredMessage": "Bitte tragen Sie Ihre E-Mail-Adresse ein",
 		"emailAddresInValidMessage": "Die E-Mail Adresse ist nicht korrekt",
-		"phoneNumberRequired": "Bitte tragen Sie Ihre Rufnummer",
-		"phoneNumberInValidMessage": "Die Rufnummer ist nicht korrekt",
-		"messageRequired": "Bitte tragen sie Ihren Message ein"		
+		"phoneNumberRequired": "Bitte tragen Sie Ihre Rufnummer ein",
+		"phoneNumberInValidMessage": "Die Rufnummer ist nicht vollständig",
+		"messageRequired": "Bitte tragen sie Ihren Nachricht ein"		
 	},
 	"location": {
-		"locationTitle": "Location",
+		"locationTitle": "Büroanschricht",
 		"streetAddress": "Badstr. 2 ",
 		"cityAddress":"76275 Ettlingen"
 	},

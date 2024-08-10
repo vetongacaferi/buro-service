@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #cecece;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">BuroService</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,11 +7,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item nav-item-active">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item nav-item-active">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li  class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -26,21 +26,8 @@
     </div>
   </nav>
 </header>
-<div id="main">
+<div id="main" style="margin-top: 40px;">
 
-  <section id="home" style="background-color: azure;padding:14px">
-    <h1 style="text-align: center;">Content</h1>
-     <div class="row" style="display:flex;justify-content: center;">
-      <div class="col-md-6 col-lg-4 mb-2" *ngFor="let category of contentCategories" style="border: 1px solid black; margin: 5px; padding: 10px; display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;border-radius: 5px;cursor:pointer" (click)="openModal(category.id)">
-        <fa-icon style="font-size: 80px;" [icon]="category.icon"></fa-icon>
-        <h3>{{category.name}}</h3>
-      </div>
-    </div>
-
-  </section>
   <section id="about" style="background-color: #219d84;color:white; padding: 30px">
     <h1 style="text-align: center;">About</h1>
     <div class="d-md-flex justify-content-center">
@@ -49,23 +36,37 @@
       margin: 20px;
       border-radius: 10px;
       width: 50%;">
-        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-      </div>
+        {{'aboutSection.leftContent' | translate}}</div>
       <div style="border: 1px solid;
       padding: 10px;
       margin: 20px;
       border-radius: 10px;
       width: 50%;">
-        You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!      </div>
+        {{'aboutSection.rightContent' | translate}}</div>
     </div>
   </section>
+  
+  <section id="home" style="background-color: azure;padding:14px">
+    <h1 style="text-align: center;">Content</h1>
+     <div class="row" style="display:flex;justify-content: center;">
+      <div class="col-md-6 col-lg-4 mb-2" *ngFor="let category of contentCategories" style="border: 1px solid black; margin: 5px; padding: 10px; display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;border-radius: 5px;cursor:pointer" (click)="openModal(category.id)">
+        <fa-icon style="font-size: 80px;" [icon]="category.icon"></fa-icon>
+        <h3 style="text-align: center;">{{category.titleKey | translate }}</h3>
+      </div>
+    </div>
 
-  <section id="contact">
+  </section>
+
+
+  <section id="contact" style="padding:80px;">
     <app-contact-form></app-contact-form>
   </section>
 </div>
 
-<footer style="background-color: green; padding:14px;color:white">
+<footer style="background-color: #cecece;; padding:14px;color:white">
   <div class="d-md-flex">
     <div style="flex:1;text-align: center;">
       <h1>Location</h1>
