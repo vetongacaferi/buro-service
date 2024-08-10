@@ -5,11 +5,7 @@
 		"aboutPage": "About us",
 		"contactPage": "Contact"
 	},
-	"aboutSection": {
-		"topContent": "Our services support your success and the development of your company. With our service, we relieve you of the burden so that you can concentrate on the core of your business.",
-		"leftContent": "The Gacaferi Büroservice offers tailor-made organizational services for entrepreneurs of all legal forms as well as private individuals. From accounting to payroll to business organization. ",
-		"rightContent": "With us you will find all the services you need under one roof. Let us help you keep an eye on your finances and optimize your business processes."
-	},
+	"topContent": "Our services support your success and the development of your company. With our service, we relieve you of the burden so that you can concentrate on the core of your business.",
 	"content": {	
         "invoiceTitle": "Sorting and digitizing documents",
         "invoiceContent":"Digitizing documents is an excellent way to increase efficiency in accounting. This makes it possible to manage documents quickly and easily. We support you in optimizing your accounting processes. It is an important step towards efficient accounting.",
@@ -38,7 +34,12 @@
 		"title": "Addition",
 		"content": "We are not an alternative to tax advisors. The Tax Advisors Act (StBerG) regulates precisely which tasks can be carried out by which professional group. We do not see ourselves as a replacement for your tax advisor, but as a partner who prepares the relevant areas for optimal further processing. We work closely with your tax advisor to ensure that your tax matters are handled professionally and efficiently."
 	},
+	"aboutSection": {
+		"leftContent": "The Gacaferi Büroservice offers tailor-made organizational services for entrepreneurs of all legal forms as well as private individuals. From accounting to payroll to business organization. ",
+		"rightContent": "With us you will find all the services you need under one roof. Let us help you keep an eye on your finances and optimize your business processes."
+	},
     "contactForm": {
+		"requiredText": "Your information will come to me and I will not share them. I will use them for reaching out to you.",
 		"topContentContact": "Are you interested and would like to contact us or do you have questions? You are welcome to contact us using the contact form. Please note that we currently have a waiting time of 7 days for processing inquiries. We want to treat each inquiry carefully and individually. We ask for your understanding for this short delay. Your patience is greatly appreciated and we look forward to contacting you soon.",
         "title": "Kontaktieren Sie mich",
 		"name": "Name",

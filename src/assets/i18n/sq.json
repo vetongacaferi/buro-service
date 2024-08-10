@@ -5,6 +5,7 @@
 		"aboutPage": "Rreth nesh ",
 		"contactPage": "Kontaktoni"
 	},
+	"topContent": "Shërbimet tona mbështesin suksesin tuaj dhe zhvillimin e kompanisë suaj. Me shërbimin tonë ne ju lehtësojmë në mënyrë që të mund të përqendroheni në thelbin e kompanisë suaj.",
 	"content": {	
         "invoiceTitle": "Renditja dhe dixhitalizimi i faturave ",
         "invoiceContent":"Digjitalizimi i faturave është një mënyrë e shkëlqyer për të rritur efikasitetin në kontabilitet. Kjo bën të mundur që dokumentet të menaxhohen shpejt dhe me lehtësi. Ne ju mbështesim në optimizimin e proceseve tuaja të kontabilitetit. Është një hap i rëndësishëm drejt kontabilitetit efikas.",
@@ -34,11 +35,11 @@
 		"content": "Ne nuk jemi alternativë për këshilltarin tatimor. Akti i Këshilltarit Tatimor (StBerG) rregullon saktësisht se cilat detyra mund të ndërmerren nga cili grup profesional. Ne nuk e shohim veten si një zëvendësim për këshilltarin tuaj tatimor, por më tepër si një partner që përgatit fushat përkatëse për përpunim të mëtejshëm optimal. Ne punojmë ngushtë me këshilltarin tuaj tatimor për të siguruar që çështjet tuaja tatimore të trajtohen në mënyrë profesionale dhe efikase."
 	},
 	"aboutSection": {
-		"topContent": "Shërbimet tona mbështesin suksesin tuaj dhe zhvillimin e kompanisë suaj. Me shërbimin tonë ne ju lehtësojmë në mënyrë që të mund të përqendroheni në thelbin e kompanisë suaj.",
 		"leftContent": "Gacaferi Büroservice ofron shërbime organizative të përshtatura për sipërmarrësit e të gjitha formave ligjore si dhe për individët privatë. Nga kontabiliteti tek lista e pagave tek organizata e biznesit.",
 		"rightContent": "Tek ne do të gjeni të gjitha shërbimet që ju nevojiten nën një çati. Le t'ju ndihmojmë të mbani një sy në financat tuaja dhe të optimizoni proceset e biznesit tuaj."
 	}, 
     "contactForm": {
+		"requiredText": "Your information will come to me and I will not share them. I will use them for reaching out to you.",
 		"topContentContact": "Jeni të interesuar dhe dëshironi të na kontaktoni apo keni ndonjë pyetje? Jeni të mirëpritur të na kontaktoni duke përdorur formularin e kontaktit. Ju lutemi vini re se aktualisht kemi një kohë pritjeje prej 7 ditësh për t'u përpunuar kërkesat. Ne duam ta trajtojmë çdo kërkesë me kujdes dhe individualisht. Kërkojmë mirëkuptimin tuaj për këtë vonesë të shkurtër. Durimi juaj vlerësohet shumë dhe ne mezi presim t'ju kontaktojmë së shpejti.",
         "title": "Me kontakto",
 		"name": "Emri",

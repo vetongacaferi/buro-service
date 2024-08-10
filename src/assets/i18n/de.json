@@ -5,6 +5,7 @@
 		"aboutPage": "Über uns",
 		"contactPage": "Kontakt"
 	},
+	"topContent": "Unsere Leistungen unterstützen Ihren Erfolg und die Entwicklung Ihres Unternehmens. Mit unserem Service entlasten wir Sie damit Sie sich auf den Kern Ihres Unternehmens konzentrieren können. ",
 	"content": {	
         "invoiceTitle": "Sortierung und Digitalisierung von Belegen",
         "invoiceContent":"Die Digitalisierung von Belegen ist eine hervorragende Möglichkeit, um die Effizienz in der Buchhaltung zu steigern. So wird ermöglicht, dass die Unterlagen schnell und einfach zu verwalten sind. Wir unterstützen Sie dabei, Ihre Buchhaltungsprozesse zu optimieren. Es ein wichtiger Schritt in Richtung einer effizienten Buchführung. ",
@@ -29,16 +30,16 @@
 		"startupTitle":"Gründungszuschuss ", 
 		"startupContent":"Die Erstellung von Gründungszuschüssen und Rentabilitätsanalysen erfordert ein tiefes Verständnis der Finanzwelt und eine genaue Analyse von Geschäftsvorgängen. Mit unserem Fachwissen sind wir geeignet, um wichtige Berechnungen und Bewertungen durchzuführen. "
     },
+	"aboutSection": {
+		"leftContent": "Das Gacaferi Büroservice bietet maßgeschneiderte organisatorische Dienstleistungen für Unternehmer jeglicher Rechtsform sowie Privatpersonen an. Von Buchhaltung über Lohnabrechnung bis hin zur Geschäftsorganisation. ",
+		"rightContent": "Bei uns finden Sie alle benötigten Dienstleistungen unter einem Dach. Lassen Sie uns Ihnen helfen Ihre Finanzen im Blick zu behalten und Ihre Geschäftsprozesse zu optimieren. "
+	},
 	"jobDescription": {
 		"title": "Zusatz",
 		"content": "Wir sind keine Alternative für den Steuerberater. Das Steuerberatergesetz (StBerG) regelt präzise, welche Aufgaben von welcher Berufsgruppe übernommen werden dürfen.  Wir verstehen uns nicht als Ersatz für Ihren Steuerberater, sondern als Partner, der die relevanten Bereiche für eine optimale Weiterbearbeitung vorbereitet. Wir arbeiten eng mit Ihrem Steuerberater zusammen, um sicherzustellen, dass Ihre steuerlichen Angelegenheiten professionell und effizient betreut werden."
 	},
-	"aboutSection": {
-		"topContent": "Unsere Leistungen unterstützen Ihren Erfolg und die Entwicklung Ihres Unternehmens. Mit unserem Service entlasten wir Sie damit Sie sich auf den Kern Ihres Unternehmens konzentrieren können. ",
-		"leftContent": "Das Gacaferi Büroservice bietet maßgeschneiderte organisatorische Dienstleistungen für Unternehmer jeglicher Rechtsform sowie Privatpersonen an. Von Buchhaltung über Lohnabrechnung bis hin zur Geschäftsorganisation. ",
-		"rightContent": "Bei uns finden Sie alle benötigten Dienstleistungen unter einem Dach. Lassen Sie uns Ihnen helfen Ihre Finanzen im Blick zu behalten und Ihre Geschäftsprozesse zu optimieren. "
-	}, 
     "contactForm": {
+		"requiredText": "Your information will come to me and I will not share them. I will use them for reaching out to you.",
 		"topContentContact": "Sie haben Interesse und möchten mit uns Kontakt aufnehmen oder haben Fragen? Gerne können Sie uns über das Kontaktformular bei uns melden. Bitte beachten Sie, dass wir zuzeit eine Wartezeit von 7 Tagen für die Bearbeitung von Anfragen haben. Wir möchten jede Anfrage sorgfältig und individuell behandeln. Wir bitte um Ihr Verständnis für diese kurze Verzögerung. Ihre Geduld wird sehr geschätzt, und wir freuen uns darauf, bald mit Ihnen Kontakt aufzunehmen. ",
         "title": "Kontakt ihren sie mich",
 		"name": "Name",

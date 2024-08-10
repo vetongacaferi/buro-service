@@ -1,5 +1,6 @@
 <div style="padding:14px;">
     <h1 style="text-align: center;">{{ 'contactForm.title' | translate}}</h1>
+    <span style="display:inline-block; border-radius: 5px;border: 1px solid black;padding: 10px;color: red;margin-bottom: 5px;;">{{ 'contactForm.requiredText' | translate}}</span>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="full-name" class="form-label">{{ 'contactForm.name' | translate}}</label>
@@ -27,6 +28,6 @@
         <textarea class="form-control" id="message" rows="3" formControlName="message"></textarea>
       </div>
       <button type="button" class="btn" (click)="resetFrom()">Reset</button>
-      <button type="submit" role="status" class="btn btn-success" [disabled]="isSending"><span style="margin-right: 5px" [ngClass]="{'spinner-border spinner-border-sm': isSending}"></span>{{ (isSending ? 'contactForm.sending' :'contactForm.send') | translate}}</button>
+      <button type="submit" role="status" class="btn btn-success" [disabled]="isSending || !contactForm.valid"><span style="margin-right: 5px" [ngClass]="{'spinner-border spinner-border-sm': isSending}"></span>{{ (isSending ? 'contactForm.sending' :'contactForm.send') | translate}}</button>
     </form>
   </div>
