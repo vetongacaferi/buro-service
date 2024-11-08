@@ -1,4 +1,4 @@
 export const environment = {
     isProduction: true,
-    ApiUrl: 'https://buroserviceserver.azurewebsites.net'
+    ApiUrl: 'https://buroservice-server.azurewebsites.net/'
 };
