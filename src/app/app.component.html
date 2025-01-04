@@ -26,10 +26,10 @@
     </div>
   </nav>
 </header>
-<div id="main" style="margin-top: 40px;">
+<div id="main" style="margin-top: 40px; display: flex;flex-direction: column;align-items: center;">
 
-  <div class="logo" style="text-align: center; padding: 40px 0">
-    <img width="800px" height="300px" src="assets/logo/logo2.jpg" />
+  <div class="logo" style="text-align: center; padding: 40px 0;">
+    <img style="width: 100%;height: auto;" src="assets/logo/logo2.jpg" />
   </div>
   <section id="home" style="background-color: azure;padding:14px">
     <h3 style="padding:10px;">{{ 'topContent' | translate }}</h3>
@@ -50,22 +50,18 @@
   <section id="about" style="background-color: #219d84;color:white; padding: 30px">
     <h1 style="text-align: center;">About</h1>
     <div class="d-md-flex justify-content-center">
-      <div style="border: 1px solid;
+      <div class="col-md-6 col-lg-4 mb-2" style="
       padding: 10px;
-      margin: 20px;
-      border-radius: 10px;
-      width: 50%;">
+      margin: 20px;">
         {{'aboutSection.leftContent' | translate}}</div>
-      <div style="border: 1px solid;
+      <div class="col-md-6 col-lg-4 mb-2" style="
       padding: 10px;
-      margin: 20px;
-      border-radius: 10px;
-      width: 50%;">
+      margin: 20px;">
         {{'aboutSection.rightContent' | translate}}</div>
     </div>
   </section>
   
-  <section id="contact" style="padding:80px;">
+  <section id="contact">
     <app-contact-form></app-contact-form>
   </section>
 </div>

@@ -8,3 +8,9 @@ nav a:hover,
 nav a.active {
     color: white;
 }
+
+@media (min-width: 600px){
+    .logo {
+        width: 600px;
+    }
+}
