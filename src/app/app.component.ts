@@ -168,5 +168,4 @@ export class AppComponent implements OnInit, AfterViewInit{
     this.modalContent = selectedKategory.contentKey;
     this.myModal.show();
   }
-
 }
