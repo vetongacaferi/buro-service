@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { EmailService } from '../email.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IContactData } from '../models/contact-form';
-import { catchError } from 'rxjs';
 
 @Component({
   selector: 'app-contact-form',
@@ -10,6 +9,7 @@ import { catchError } from 'rxjs';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent implements OnInit {
+  @Output() openModal = new EventEmitter();
 
   contactForm: FormGroup;
 
@@ -24,17 +24,20 @@ export class ContactFormComponent implements OnInit {
       name: ['', Validators.required],
       emailAddress: ['', [Validators.required, Validators.email]],
       phoneNumber: ['', Validators.required],
-      message: ['', Validators.required]
-   
+      message: ['', Validators.required],
+      agreeWithTermsAndServices: ['', Validators.requiredTrue],
     });
   }
-  ngOnInit(): void {
 
+  ngOnInit(): void {
   }
 
+  public onButtonSubmit() {
+    this.openModal.emit();
+  }
+  
   public onSubmit(): void{
     this.submitted = true;
-    console.log('onSubmit clicked');
 
     if(!this.contactForm.valid){
       return;
