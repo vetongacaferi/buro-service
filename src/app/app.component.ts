@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { faFileInvoice, faWallet, faListCheck, faPassport, faChildren } from '@fortawesome/free-solid-svg-icons';
+import { faFileInvoice, faWallet, faListCheck, faPassport, } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,8 @@ export class AppComponent implements OnInit, AfterViewInit{
   selectedLanguage: string  = '';
   
   myModal: any = null;
+
+  consentModal: any = null;
 
   // modal data
   modalTitle: string = '';
@@ -109,6 +112,9 @@ export class AppComponent implements OnInit, AfterViewInit{
     }
   ]
 
+  public facebookIcon : any = null;
+  public instagramIcon : any= null;
+
   constructor(public translateService: TranslateService) {
     const defaultLang = this.translateService.defaultLang;
     
@@ -117,7 +123,11 @@ export class AppComponent implements OnInit, AfterViewInit{
     {
       this.selectedLanguage = this.languageList.find(x => x.code === defaultLang)?.code;
     }
+    this.facebookIcon = faFacebook;
+    this.instagramIcon = faInstagram;
   }
+
+
   ngAfterViewInit(): void {
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('header nav a');
@@ -150,7 +160,9 @@ export class AppComponent implements OnInit, AfterViewInit{
       keyboard: false
     });
 
-    // this.ngAfterViewInit();
+    this.consentModal = new (window as any).bootstrap.Modal('#consentModal', {
+      keyboard: false
+    });
   }
 
 
@@ -169,4 +181,7 @@ export class AppComponent implements OnInit, AfterViewInit{
     this.myModal.show();
   }
 
+  public openConsentModal(): void{
+    this.consentModal.show();
+  }
 }
