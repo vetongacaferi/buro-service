@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { faFileInvoice, faWallet, faListCheck, faPassport, } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, IconDefinition } from '@fortawesome/free-brands-svg-icons';
+import { Collapse } from 'bootstrap'; // Import Bootstrap's Collapse class
 
 @Component({
   selector: 'app-root',
@@ -118,7 +119,8 @@ export class AppComponent implements OnInit, AfterViewInit{
   constructor(public translateService: TranslateService) {
     const defaultLang = this.translateService.defaultLang;
     
-    console.log('defaultLang:', defaultLang)
+    console.log('defaultLang:', defaultLang);
+
     if(defaultLang)
     {
       this.selectedLanguage = this.languageList.find(x => x.code === defaultLang)?.code;
@@ -127,10 +129,12 @@ export class AppComponent implements OnInit, AfterViewInit{
     this.instagramIcon = faInstagram;
   }
 
+  public navBar: any;
 
   ngAfterViewInit(): void {
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('header nav a');
+    this.navBar = document.querySelectorAll('#navbarSupportedContent');
 
     window.onscroll = () => {
       sections.forEach(sec => {
@@ -154,7 +158,7 @@ export class AppComponent implements OnInit, AfterViewInit{
         };
     });
   };
-  }
+}
   ngOnInit(): void {
     this.myModal = new (window as any).bootstrap.Modal('#exampleModal', {
       keyboard: false
@@ -165,13 +169,12 @@ export class AppComponent implements OnInit, AfterViewInit{
     });
   }
 
-
-
   public onLanguageChange(event: string): void{
     this.selectedLanguage = event;
     if(this.selectedLanguage){
       this.translateService.use(this.selectedLanguage);
     }
+    this.collapseMenu();
   }
 
   public openModal(id: string): void{
@@ -183,5 +186,25 @@ export class AppComponent implements OnInit, AfterViewInit{
 
   public openConsentModal(): void{
     this.consentModal.show();
+  }
+
+  public handleNavClick(event: any) {
+    const target = event.target.getAttribute('href');
+    if (target && target.startsWith('#')) {
+      const section = document.querySelector(target);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+      this.collapseMenu();
+    }
+  }
+
+  private collapseMenu() {
+    const navbarCollapse = document.getElementById('navbarSupportedContent');
+    if (navbarCollapse) {
+      new Collapse(navbarCollapse, {
+        toggle: false
+      }).hide();
+    }
   }
 }
