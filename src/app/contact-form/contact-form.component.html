@@ -33,7 +33,7 @@
           <a  (click)="onButtonSubmit()" style="color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));text-decoration: underline;" target="_blank">I agree with terms and agreements....</a>
         </label>
         <span style="display: block;" class="text-danger" *ngIf="(contactFromControl['agreeWithTermsAndServices']?.touched || submitted) && contactFromControl['agreeWithTermsAndServices']?.errors?.['required']">
-          TODO: You must read frist the aggreement and consent to it.
+          {{'contactForm.termsAndConditionsRequired' | translate }}
         </span>
       </div>
       <button type="button" class="btn" (click)="resetFrom()">Reset</button>

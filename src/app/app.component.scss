@@ -40,9 +40,27 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+// .card:hover {
+//     transform: translateY(-5px);
+//     opacity: 0.5;
+//     background-image: ;
+// }
+
 .card:hover {
+    cursor:pointer;
     transform: translateY(-5px);
-}
+    opacity: 0.5;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>');
+
+    .card-body{
+        fa-icon{
+            opacity: 0.1;
+        }   
+    }
+  }
 
 #about {
     background-color: #219d84;;
