@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { faFileInvoice, faWallet, faListCheck, faPassport, } from '@fortawesome/free-solid-svg-icons';
+import { faFileInvoice, faWallet, faListCheck, faPassport, faHandsHoldingChild, faHandHoldingDollar} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { Collapse } from 'bootstrap'; // Import Bootstrap's Collapse class
 
@@ -72,7 +72,7 @@ export class AppComponent implements OnInit, AfterViewInit{
     {
       id: 'salaryId',
       name: 'Salary',
-      icon: faPassport, // TODO:
+      icon: faHandHoldingDollar, // TODO:
       titleKey: "content.salaryTitle",
       contentKey: "content.salaryContent"
     },
@@ -93,7 +93,7 @@ export class AppComponent implements OnInit, AfterViewInit{
     {
       id: 'kidsId',
       name: 'Kids',
-      icon: faPassport, // TODO:
+      icon: faHandsHoldingChild, 
       titleKey: "content.kidsTitle",
       contentKey: "content.kidsContent"
     },

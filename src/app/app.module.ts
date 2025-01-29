@@ -28,7 +28,7 @@ export function HttpLoaderFactory(http: HttpClient){
     FontAwesomeModule,
     MarkdownModule.forRoot(),
     TranslateModule.forRoot({
-      defaultLanguage: "en",
+      defaultLanguage: "de",
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
