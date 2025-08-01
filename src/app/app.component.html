@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #2C3E50">
     <div class="container-fluid">
-      <a class="navbar-brand" style="color: white" href="#" (click)="handleNavClick($event)">Gacaferi Büroservice</a>
+      <a class="navbar-brand" style="color: white" href="#" (click)="handleNavClick($event)">{{ 'header.applicationTitle' | translate }}</a>
       <button style="background-color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -9,13 +9,13 @@
       <div class="navbar-collapse collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item nav-item-active" style="padding-inline: 10px;">
-            <a class="nav-link active" style="color: white" aria-current="page" href="#home" (click)="handleNavClick($event)">Home</a>
+            <a class="nav-link active" style="color: white" aria-current="page" href="#home" (click)="handleNavClick($event)">{{ 'header.homePage' | translate }}</a>
           </li>
           <li class="nav-item"  style="padding-inline: 10px;">
-            <a class="nav-link" style="color: white" href="#about" (click)="handleNavClick($event)">About</a>
+            <a class="nav-link" style="color: white" href="#about" (click)="handleNavClick($event)">{{ 'header.aboutPage' | translate }}</a>
           </li>
           <li  class="nav-item"  style="padding-inline: 10px;">
-            <a class="nav-link" style="color: white" href="#contact" (click)="handleNavClick($event)">Contact</a>
+            <a class="nav-link" style="color: white" href="#contact" (click)="handleNavClick($event)">{{ 'header.contactPage' | translate }}</a>
           </li>
         </ul>
         <div class="navbar-text">
