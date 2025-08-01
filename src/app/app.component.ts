@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { faFileInvoice, faWallet, faListCheck, faPassport, faHandsHoldingChild, faHandHoldingDollar} from '@fortawesome/free-solid-svg-icons';
+import { faFolderTree,  faCalculator, faListCheck, faFileWaveform, faTableList, faHandHoldingDollar, faSitemap, faPeopleRoof, faHandsHoldingChild, faIdCard, faFlagCheckered} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { Collapse } from 'bootstrap'; // Import Bootstrap's Collapse class
 
@@ -37,14 +37,14 @@ export class AppComponent implements OnInit, AfterViewInit{
     {
       id: 'rrogatId',
       name: 'Rrogat',
-      icon: faWallet,
+      icon: faFolderTree,
       titleKey: "content.invoiceTitle",
       contentKey: "content.invoiceContent"
     },
     {
       id: 'tatimetId',
       name: 'Tatimet',
-      icon: faFileInvoice,
+      icon: faCalculator,
       titleKey: "content.taxesTitle",
       contentKey: "content.taxesContent"
     },
@@ -58,35 +58,35 @@ export class AppComponent implements OnInit, AfterViewInit{
     {
       id: 'ndihmePerVizaId',
       name: 'Ndihme per Viza',
-      icon: faPassport,
+      icon: faFileWaveform,
       titleKey: "content.appointmentTitle",
       contentKey: "content.appointmentContent"
     },
     {
       id: 'taxId',
       name: 'Pergatitje per taxa',
-      icon: faPassport, // TODO:
+      icon: faTableList,
       titleKey: "content.taxTitle",
       contentKey: "content.taxContent"
     },
     {
       id: 'salaryId',
       name: 'Salary',
-      icon: faHandHoldingDollar, // TODO:
+      icon: faHandHoldingDollar,
       titleKey: "content.salaryTitle",
       contentKey: "content.salaryContent"
     },
     {
       id: 'organisationId',
       name: 'Organisation',
-      icon: faPassport, // TODO:
+      icon: faSitemap, 
       titleKey: "content.organisationTitle",
       contentKey: "content.organisationContent"
     },
     {
       id: 'imigrationId',
       name: 'Imigration',
-      icon: faPassport, // TODO:
+      icon: faPeopleRoof,
       titleKey: "content.immigrationTitle",
       contentKey: "content.immigrationContent"
     },
@@ -100,14 +100,14 @@ export class AppComponent implements OnInit, AfterViewInit{
     {
       id: 'logoId',
       name: 'Logo',
-      icon: faPassport, // TODO:
+      icon: faIdCard,
       titleKey: "content.logoTitle",
       contentKey: "content.logoContent"
     },
     {
       id: 'startupId',
       name: 'Startup',
-      icon: faPassport, // TODO:
+      icon: faFlagCheckered,
       titleKey: "content.startupTitle",
       contentKey: "content.startupContent"
     }
