@@ -151,7 +151,6 @@ export class AppComponent implements OnInit, AfterViewInit{
                 var findNav = document.querySelector('header nav a[href*=' + id + ']');
                 if(findNav){
                   findNav.classList.add('active');
-                  console.log(' findNav.parentElement?:',  findNav.parentElement);
                   findNav.parentElement?.classList.add('nav-item-active')
                 }
             });
