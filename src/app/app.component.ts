@@ -3,6 +3,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { faFolderTree,  faCalculator, faListCheck, faFileWaveform, faTableList, faHandHoldingDollar, faSitemap, faPeopleRoof, faHandsHoldingChild, faIdCard, faFlagCheckered} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { Collapse } from 'bootstrap'; // Import Bootstrap's Collapse class
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -116,7 +118,10 @@ export class AppComponent implements OnInit, AfterViewInit{
   public facebookIcon : any = null;
   public instagramIcon : any= null;
 
-  constructor(public translateService: TranslateService) {
+  constructor(
+    public translateService: TranslateService,
+    private httpClient: HttpClient
+  ) {
     const defaultLang = this.translateService.defaultLang;
     
     console.log('defaultLang:', defaultLang);
@@ -158,7 +163,11 @@ export class AppComponent implements OnInit, AfterViewInit{
     });
   };
 }
+
   ngOnInit(): void {
+    // get server email ready
+    this.httpClient.get(`${environment.ApiUrl}`).subscribe();
+
     this.myModal = new (window as any).bootstrap.Modal('#exampleModal', {
       keyboard: false
     });
