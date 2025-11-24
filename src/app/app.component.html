@@ -62,14 +62,21 @@
   <section id="about" style="background-color: #219d84;color:white; padding: 30px">
     <h1 style="text-align: center;">{{ 'header.aboutPage' | translate }}</h1>
     <div class="d-md-flex justify-content-center">
-      <div class="col-md-6 col-lg-4 mb-2" style="
-      padding: 10px;
-      margin: 20px;">
-        {{'aboutSection.leftContent' | translate}}</div>
-      <div class="col-md-6 col-lg-4 mb-2" style="
-      padding: 10px;
-      margin: 20px;">
-        {{'aboutSection.rightContent' | translate}}</div>
+      <div class="col-md-4 col-lg-4 mb-2" style="
+        padding: 10px;
+        margin: 20px;">
+          {{'aboutSection.leftContent' | translate}}</div>
+      <div class="col-md-4 col-lg-4 mb-2" style="
+        padding: 10px;
+        margin: 20px;">
+          {{'aboutSection.centerContent' | translate}}
+      </div>
+      
+      <div class="col-md-4 col-lg-4 mb-2" style="
+        padding: 10px;
+        margin: 20px;">
+          {{'aboutSection.rightContent' | translate}}
+      </div>
     </div>
   </section>
   
@@ -82,18 +89,18 @@
   <div class="d-md-flex">
     <div style="flex:1;text-align: center;">
       <h1>{{'location.locationTitle' | translate}}</h1>
-      <p style="margin-bottom: 0px;">{{'location.streetAddress' | translate}}</p>
+      <!-- <p style="margin-bottom: 0px;">{{'location.streetAddress' | translate}}</p> -->
       <p style="margin-bottom: 0px;">{{'location.cityAddress' | translate}}</p>
     </div>
     <div style="flex:1;text-align: center;">
       <h1>Web</h1>
       <div style="display: flex; justify-content: center; gap: 15px;">
-        <span>
+        <a href="https://www.facebook.com/gacaferiedona">
             <fa-icon [icon]="facebookIcon" style="font-size: 30px;"></fa-icon>
-        </span>
-        <span>
+        </a>
+        <a href="https://www.instagram.com/gacaferiedona">
             <fa-icon [icon]="instagramIcon" style="font-size: 30px;"></fa-icon>
-        </span>
+        </a>
       </div>
     </div>
   </div>
