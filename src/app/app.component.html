@@ -34,8 +34,8 @@
     <img style="width: 100%;height: auto;" src="assets/logo/logo2.jpg" />
   </div>
   <section id="home" style="padding:14px">
-    <h5 style="padding:10px;">{{ 'topContent' | translate }}</h5>
-    <h1 style="text-align: center;">{{ 'header.homePage' | translate }}</h1>
+    <!-- <h5 style="padding:10px;">{{ 'topContent' | translate }}</h5> -->
+    <h1 style="text-align: center;margin-top:10px;">{{ 'header.homePage' | translate }}</h1>
      <!-- <div class="row" style="display:flex;justify-content: center;">
       <div class="col-md-6 col-lg-4 mb-2" *ngFor="let category of contentCategories" style="border: 1px solid black; margin: 5px; padding: 10px; display: flex;
       flex-direction: column;
@@ -89,7 +89,8 @@
   <div class="d-md-flex">
     <div style="flex:1;text-align: center;">
       <h1>{{'location.locationTitle' | translate}}</h1>
-      <!-- <p style="margin-bottom: 0px;">{{'location.streetAddress' | translate}}</p> -->
+      <p style="margin-bottom: 0px;">{{'location.mailboxFacility' | translate}}</p>
+      <p style="margin-bottom: 0px;">{{'location.streetAddress' | translate}}</p>
       <p style="margin-bottom: 0px;">{{'location.cityAddress' | translate}}</p>
     </div>
     <div style="flex:1;text-align: center;">
